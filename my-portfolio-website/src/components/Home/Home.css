@@ -1,0 +1,64 @@
+.home-page {
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.title-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
+  max-width: 50%; /* Adjust the maximum width of the title */
+  text-align: center;
+}
+
+.name {
+  font-size: 3.5em; /* Adjust the font size as needed */
+}
+
+.profile-picture {
+  flex: 1;
+  max-width: 45%; /* Adjust the maximum width of the image */
+  margin-top: 10px; /* Add some margin to separate the image from the title */
+}
+
+.profile-picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20%;
+}
+
+p{
+    font-size: 1em;
+    margin: 0;
+    line-height: 0;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 768px){
+
+    .title-section{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profile-picture {
+        flex: 1;
+        max-width: 80%; /* Adjust the maximum width of the image */
+        margin-top: 10px; /* Add some margin to separate the image from the title */
+      }
+    
+
+    .profile-picture img {
+        max-width: 100%;
+        margin-top: 2em;
+        height: auto;
+      }
+}
