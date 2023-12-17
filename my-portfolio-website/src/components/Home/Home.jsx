@@ -54,6 +54,7 @@ function Home() {
               <p>Passionate Developer</p>
               <p>Enthusiastic</p>
               <p>Curious</p>
+              <p>Creative</p>
             </div>
           </div>
         </div>

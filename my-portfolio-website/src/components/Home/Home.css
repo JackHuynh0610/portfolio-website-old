@@ -1,64 +1,72 @@
+/* Set padding for better spacing in the home page */
 .home-page {
-  padding: 20px; /* Add some padding for better spacing */
-}
-
-.title-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.title {
-  flex: 1;
-  max-width: 50%; /* Adjust the maximum width of the title */
-  text-align: center;
-}
-
-.name {
-  font-size: 3.5em; /* Adjust the font size as needed */
-}
-
-.profile-picture {
-  flex: 1;
-  max-width: 45%; /* Adjust the maximum width of the image */
-  margin-top: 10px; /* Add some margin to separate the image from the title */
-}
-
-.profile-picture img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20%;
-}
-
-p{
+    padding: 20px;
+  }
+  
+  /* Style for the title section */
+  .title-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styles for the title container */
+  .title {
+    flex: 1;
+    max-width: 50%; /* Adjust the maximum width of the title */
+    text-align: center;
+  }
+  
+  /* Style for the name in the title */
+  .name {
+    font-size: 3.5em; /* Adjust the font size as needed */
+  }
+  
+  /* Styles for the profile picture container */
+  .profile-picture {
+    flex: 1;
+    max-width: 45%; /* Adjust the maximum width of the image */
+    margin-top: 10px; /* Add margin to separate the image from the title */
+  }
+  
+  /* Styles for the profile picture */
+  .profile-picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%; /* Add border-radius for rounded corners */
+  }
+  
+  /* Styles for paragraphs */
+  p {
     font-size: 1em;
     margin: 0;
     line-height: 0;
     font-weight: bold;
-}
-
-
-
-@media (max-width: 768px){
-
-    .title-section{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
+  }
+  
+  /* Media query for screens up to 768px width */
+  @media (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    .title-section {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
     }
-    
+  
+    /* Adjust the maximum width of the image for smaller screens */
     .profile-picture {
-        flex: 1;
-        max-width: 80%; /* Adjust the maximum width of the image */
-        margin-top: 10px; /* Add some margin to separate the image from the title */
-      }
-    
-
+      flex: 1;
+      max-width: 80%;
+      margin-top: 10px;
+    }
+  
+    /* Adjust the styles for the profile picture on smaller screens */
     .profile-picture img {
-        max-width: 100%;
-        margin-top: 2em;
-        height: auto;
-      }
-}
+      max-width: 100%;
+      margin-top: 2em;
+      height: auto;
+    }
+  }
+  
