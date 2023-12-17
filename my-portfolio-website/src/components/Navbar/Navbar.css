@@ -1,0 +1,99 @@
+.header {
+  background-color: rgba(
+    250,
+    235,
+    215,
+    0.849
+  ); /* Set background color for the header */
+  padding: 0.5%;
+  z-index: 999;
+  top: 0;
+  position: sticky;
+}
+
+.hamburger-menu {
+  display: none; /* Hide hamburger menu by default */
+  cursor: pointer; /*this just an indication they you are hover over the hamburger, def not the pointer in C "finger cross*/
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; /*make sure the icon space nicely and take up the whole screen so senior dev(cuz they old) can easily navigate*/
+  margin: 0;
+  margin-top: 0.4rem;
+  padding: 0;
+}
+
+.homeLogo,
+.aboutLogo,
+.contactLogo {
+  width: 30px; /* Set width for the logos */
+  opacity: 65%;
+}
+
+.homeLogo:hover,
+.aboutLogo:hover,
+.contactLogo:hover {
+  width: 30px; /* Set width for the logos */
+  opacity: 100%;
+  transform: translateY(-5px);
+}
+
+/* Media query for responsive design */
+
+@media (max-width: 768px) {
+  .header {
+    background-color: rgba(250, 235, 215, 0.849);
+    opacity: 100%; /*make sure the hamburger akways visible (I'm hungry)*/
+    top: 0;
+    position: sticky;
+  }
+
+  .hamburger-menu {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.2rem;
+    display: flex; /* Show hamburger menu for smaller screens */
+    justify-content: left;
+    font-size: 1.6rem;
+  }
+
+  .nav-menu {
+    display: none; /* Hide the regular menu for smaller screens */
+  }
+
+  .homeLogo,
+  .aboutLogo,
+  .contactLogo {
+    margin-bottom: 1rem;
+    opacity: 65%;
+  }
+  .homeLogo:hover,
+  .aboutLogo:hover,
+  .contactLogo:hover {
+    opacity: 100%; /* Change the opacity on hover */
+    transform: translateY(-5px); /* Move the icon 5 pixels upward on hover */
+  }
+
+  .nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 0.5s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(
+      -20px
+    ); /* Optional: Add a slight upward translation */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
