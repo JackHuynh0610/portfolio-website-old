@@ -13,9 +13,6 @@ function Navbar() {
     setMenuVisible(!menuVisible);
   };
 
-  const closeMenu = () => {
-    setMenuVisible(false);
-  };
 
   return (
     <div className="header">
