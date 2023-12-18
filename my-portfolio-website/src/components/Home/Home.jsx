@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import SplitTextJS from "split-text-js";
 import "./Home.css";
-import JackHuynh from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\houseBand.jpg";
+import JackHuynh from 'D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png'
 
 function Home() {
   useEffect(() => {
     // Get all paragraphs inside the text-wrapper
-    const titles = gsap.utils.toArray("p");
+    const titles = gsap.utils.toArray(".traits");
 
     // Create a GSAP timeline with repeat set to -1 for continuous animation
     const tl = gsap.timeline({ repeat: -1 });
@@ -24,7 +24,7 @@ function Home() {
           opacity: 0,
           y: 20,
           rotateX: -90,
-          stagger: 0.02,
+          stagger: 0.04,
         },
         "<"
       )
@@ -35,26 +35,27 @@ function Home() {
             opacity: 0,
             y: -20,
             rotateX: 90,
-            stagger: 0.02,
+            stagger: 0.04,
           },
-          "<2"
+          "<2.5"
         );
     });
-  }, []); // Empty dependency array to run the effect only once when the component mounts
+  }); 
 
+  
   return (
     <div className="home-page">
       <section className="title-section">
         <div className="title">
-          <h1 className="name">Jack Huynh</h1>
+          <h1 className="name">Nghia Huynh</h1>
           <div className="word-container">
             <div className="text-wrapper">
               {/* Text content to be animated */}
-              <p>Software Engineer</p>
-              <p>Passionate Developer</p>
-              <p>Enthusiastic</p>
-              <p>Curious</p>
-              <p>Creative</p>
+              <p className="traits">Software Engineer</p>
+              <p className="traits">Passionate Developer</p>
+              <p className="traits">Enthusiastic</p>
+              <p className="traits">Curious</p>
+              <p className="traits">Creative</p>
             </div>
           </div>
         </div>

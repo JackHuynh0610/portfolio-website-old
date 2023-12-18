@@ -1,6 +1,6 @@
 /* Set padding for better spacing in the home page */
 .home-page {
-    padding: 20px;
+    padding: 10px;
   }
   
   /* Style for the title section */
@@ -14,36 +14,43 @@
   /* Styles for the title container */
   .title {
     flex: 1;
-    max-width: 50%; /* Adjust the maximum width of the title */
+    max-width: 100%; /* Adjust the maximum width of the title */
     text-align: center;
+    padding: 10px;
   }
   
   /* Style for the name in the title */
   .name {
-    font-size: 3.5em; /* Adjust the font size as needed */
+    font-size: 5em;
+    color: antiquewhite; /* Adjust the font size as needed */
+    animation: fadeIn 2s ease;
   }
   
   /* Styles for the profile picture container */
   .profile-picture {
     flex: 1;
-    max-width: 45%; /* Adjust the maximum width of the image */
-    margin-top: 10px; /* Add margin to separate the image from the title */
+    max-width: 40%; /* Adjust the maximum width of the image */
+    margin-top: 20px; /* Add margin to separate the image from the title */
+    animation: fadeIn2 2s ease;
   }
   
   /* Styles for the profile picture */
   .profile-picture img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
-    border-radius: 20%; /* Add border-radius for rounded corners */
+    border-radius: 50%; /* Add border-radius for rounded corners */
   }
   
   /* Styles for paragraphs */
   p {
-    font-size: 1em;
+    font-size: 2em;
     margin: 0;
     line-height: 0;
     font-weight: bold;
+    color: antiquewhite;
+    
   }
+
   
   /* Media query for screens up to 768px width */
   @media (max-width: 768px) {
@@ -54,6 +61,11 @@
       flex-direction: column;
       align-items: center;
     }
+
+    .name {
+        font-size: 4em; /* Adjust the font size as needed */
+        
+      }
   
     /* Adjust the maximum width of the image for smaller screens */
     .profile-picture {
@@ -69,4 +81,33 @@
       height: auto;
     }
   }
+  
+/*Fade in from top down  (I have PTSD about DP) */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(
+        -30px
+      ); /* Optional: Add a slight upward translation */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*Fade in from bottom up (I have PTSD about DP)*/
+  @keyframes fadeIn2 {
+    from {
+      opacity: 0;
+      transform: translateY(
+        30px
+      ); /* Optional: Add a slight upward translation */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   
