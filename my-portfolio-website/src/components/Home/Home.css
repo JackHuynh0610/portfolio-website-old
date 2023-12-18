@@ -1,6 +1,7 @@
 /* Set padding for better spacing in the home page */
 .home-page {
     padding: 10px;
+    line-height: 90px;
   }
   
   /* Style for the title section */
@@ -39,6 +40,7 @@
     max-width: 90%;
     height: auto;
     border-radius: 50%; /* Add border-radius for rounded corners */
+    box-shadow: 5px 0 10px rgba(255, 255, 255, 0.137);
   }
   
   /* Styles for paragraphs */
@@ -72,6 +74,7 @@
       flex: 1;
       max-width: 80%;
       margin-top: 10px;
+      
     }
   
     /* Adjust the styles for the profile picture on smaller screens */
@@ -79,6 +82,7 @@
       max-width: 100%;
       margin-top: 2em;
       height: auto;
+      box-shadow: none;
     }
   }
   
@@ -87,7 +91,7 @@
     from {
       opacity: 0;
       transform: translateY(
-        -30px
+        -40px
       ); /* Optional: Add a slight upward translation */
     }
     to {
@@ -101,7 +105,7 @@
     from {
       opacity: 0;
       transform: translateY(
-        30px
+        40px
       ); /* Optional: Add a slight upward translation */
     }
     to {
@@ -110,4 +114,3 @@
     }
   }
 
-  
