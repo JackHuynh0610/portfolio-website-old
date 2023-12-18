@@ -3,11 +3,12 @@
     0,
     0,
     0,
-    0.849
+    100
   ); /* Set background color for the header */
   padding: 0.5%;
   z-index: 999;
   top: 0;
+  animation: fadeIn 0.8s ease;
   position: sticky;
 }
 
@@ -30,6 +31,7 @@
 .contactLogo {
   width: 30px; /* Set width for the logos */
   opacity: 80%;
+  transition: 0.3s ease;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg)
     brightness(102%) contrast(102%);
 }
@@ -39,6 +41,7 @@
 .contactLogo:hover {
   width: 30px; /* Set width for the logos */
   opacity: 100%;
+  transition: 0.3s ease;
   transform: translateY(-2px);
   cursor: pointer;
 }

@@ -24,7 +24,7 @@ function Navbar() {
         </div>
         <ul className={`nav-menu ${menuVisible ? "show" : ""}`}>
           <li>
-            <a href="/" className="home-link" onClick={closeMenu}>
+            <a href="#home-page" className="home-link" onClick={closeMenu}>
               <img src={homeLogo} alt="homeLogo" className="homeLogo" />
             </a>
           </li>

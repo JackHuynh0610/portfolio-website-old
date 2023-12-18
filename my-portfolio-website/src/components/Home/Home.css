@@ -4,6 +4,7 @@
   line-height: 90px;
   align-items: center;
   padding-top: 25px;
+  transition: 0.9s ease-in-out;
 }
 
 /* Style for the title section */
@@ -13,6 +14,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.about-link-home{
+  text-decoration: none;
+}
+
 
 /* Styles for the title container */
 .home-title {
@@ -27,11 +33,20 @@
   font-size: 5em;
   color: antiquewhite; /* Adjust the font size as needed */
   animation: fadeIn 2s ease;
+  transition: 0.2s ease-out;
 }
+
+.name:hover{
+  transform:translateY(-20px);
+  transition: 0.3s ease-in-out;
+}
+
+
 
 /* Styles for the profile picture container */
 .profile-picture {
   flex: 1;
+  padding-top: 40px;
   max-width: 40%; /* Adjust the maximum width of the image */
   margin-top: 2em; /* Add margin to separate the image from the title */
   animation: fadeIn2 2s ease;
@@ -70,6 +85,7 @@
 
   /* Adjust the maximum width of the image for smaller screens */
   .profile-picture {
+    padding-top: 0;
     flex: 1;
     max-width: 80%;
     margin-top: 80px;

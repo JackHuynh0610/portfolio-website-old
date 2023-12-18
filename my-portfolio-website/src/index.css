@@ -4,7 +4,6 @@
     --secondary-color: #acaa9b;
     --secondary-dark:#adab95;
     scroll-behavior: smooth;
-    scroll-snap-type: mandatory;
 }
 
 body {
@@ -32,3 +31,4 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
