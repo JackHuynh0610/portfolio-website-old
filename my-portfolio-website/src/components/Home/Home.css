@@ -31,7 +31,7 @@
   .profile-picture {
     flex: 1;
     max-width: 40%; /* Adjust the maximum width of the image */
-    margin-top: 20px; /* Add margin to separate the image from the title */
+    margin-top: 2em; /* Add margin to separate the image from the title */
     animation: fadeIn2 2s ease;
   }
   
@@ -53,7 +53,6 @@
     
   }
 
-  
   /* Media query for screens up to 768px width */
   @media (max-width: 768px) {
     /* Adjust the layout for smaller screens */
@@ -79,8 +78,8 @@
   
     /* Adjust the styles for the profile picture on smaller screens */
     .profile-picture img {
-      max-width: 100%;
-      margin-top: 2em;
+      max-width: 75%;
+      margin-top: 1em;
       height: auto;
       box-shadow: none;
     }
