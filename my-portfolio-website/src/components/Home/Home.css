@@ -1,115 +1,109 @@
 /* Set padding for better spacing in the home page */
 .home-page {
-    padding: 10px;
-    line-height: 90px;
-  }
-  
-  /* Style for the title section */
+  padding: 10px;
+  line-height: 90px;
+}
+
+/* Style for the title section */
+.title-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the title container */
+.title {
+  flex: 1;
+  max-width: 100%; /* Adjust the maximum width of the title */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style for the name in the title */
+.name {
+  font-size: 5em;
+  color: antiquewhite; /* Adjust the font size as needed */
+  animation: fadeIn 2s ease;
+}
+
+/* Styles for the profile picture container */
+.profile-picture {
+  flex: 1;
+  max-width: 40%; /* Adjust the maximum width of the image */
+  margin-top: 2em; /* Add margin to separate the image from the title */
+  animation: fadeIn2 2s ease;
+}
+
+/* Styles for the profile picture */
+.profile-picture img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 50%; /* Add border-radius for rounded corners */
+  box-shadow: 5px 0 10px rgba(255, 255, 255, 0.137);
+}
+
+/* Styles for paragraphs */
+.traits {
+  font-size: 2em;
+  margin: 0;
+  line-height: 0;
+  font-weight: bold;
+  color: antiquewhite;
+}
+
+/* Media query for screens up to 768px width */
+@media (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
   .title-section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
   }
-  
-  /* Styles for the title container */
-  .title {
-    flex: 1;
-    max-width: 100%; /* Adjust the maximum width of the title */
-    text-align: center;
-    padding: 10px;
-  }
-  
-  /* Style for the name in the title */
+
   .name {
-    font-size: 5em;
-    color: antiquewhite; /* Adjust the font size as needed */
-    animation: fadeIn 2s ease;
+    font-size: 4em; /* Adjust the font size as needed */
   }
-  
-  /* Styles for the profile picture container */
+
+  /* Adjust the maximum width of the image for smaller screens */
   .profile-picture {
     flex: 1;
-    max-width: 40%; /* Adjust the maximum width of the image */
-    margin-top: 2em; /* Add margin to separate the image from the title */
-    animation: fadeIn2 2s ease;
+    max-width: 80%;
+    margin-top: 10px;
   }
-  
-  /* Styles for the profile picture */
+
+  /* Adjust the styles for the profile picture on smaller screens */
   .profile-picture img {
-    max-width: 90%;
+    max-width: 75%;
+    margin-top: 1em;
     height: auto;
-    border-radius: 50%; /* Add border-radius for rounded corners */
-    box-shadow: 5px 0 10px rgba(255, 255, 255, 0.137);
+    box-shadow: none;
   }
-  
-  /* Styles for paragraphs */
-  p {
-    font-size: 2em;
-    margin: 0;
-    line-height: 0;
-    font-weight: bold;
-    color: antiquewhite;
-    
-  }
+}
 
-  /* Media query for screens up to 768px width */
-  @media (max-width: 768px) {
-    /* Adjust the layout for smaller screens */
-    .title-section {
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .name {
-        font-size: 4em; /* Adjust the font size as needed */
-        
-      }
-  
-    /* Adjust the maximum width of the image for smaller screens */
-    .profile-picture {
-      flex: 1;
-      max-width: 80%;
-      margin-top: 10px;
-      
-    }
-  
-    /* Adjust the styles for the profile picture on smaller screens */
-    .profile-picture img {
-      max-width: 75%;
-      margin-top: 1em;
-      height: auto;
-      box-shadow: none;
-    }
-  }
-  
 /*Fade in from top down  (I have PTSD about DP) */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(
-        -40px
-      ); /* Optional: Add a slight upward translation */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(
+      -40px
+    ); /* Optional: Add a slight upward translation */
   }
-
-  /*Fade in from bottom up (I have PTSD about DP)*/
-  @keyframes fadeIn2 {
-    from {
-      opacity: 0;
-      transform: translateY(
-        40px
-      ); /* Optional: Add a slight upward translation */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
+/*Fade in from bottom up (I have PTSD about DP)*/
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* Optional: Add a slight upward translation */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
