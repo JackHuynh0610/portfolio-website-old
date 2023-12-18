@@ -40,6 +40,7 @@
   width: 30px; /* Set width for the logos */
   opacity: 100%;
   transform: translateY(-2px);
+  cursor: pointer;
 }
 
 /* Media query for responsive design */
