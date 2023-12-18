@@ -2,6 +2,7 @@
 .home-page {
   padding: 10px;
   line-height: 90px;
+  align-items: center;
 }
 
 /* Style for the title section */

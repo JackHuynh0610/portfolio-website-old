@@ -90,7 +90,7 @@
     opacity: 0;
     transform: translateY(
       -20px
-    ); /* Optional: Add a slight upward translation */
+    );
   }
   to {
     opacity: 1;

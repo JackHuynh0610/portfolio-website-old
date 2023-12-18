@@ -1,23 +1,67 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import SplitTextJS from "split-text-js";
 import "./Home.css";
-import JackHuynh from 'D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png'
+import JackHuynh from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png";
+import { useIntersection } from "react-use";
 
 function Home() {
-  useEffect(() => {
-    // Get all paragraphs inside the text-wrapper
-    const titles = gsap.utils.toArray(".traits");
+  //-----------------------For scroll animation-------------------------//
+  // Refs for the elements
+  const titleRef = useRef(null);
 
-    // Create a GSAP timeline with repeat set to -1 for continuous animation
+  // Calculate threshold value based on the browser width
+  const browserWidth = window.innerWidth;
+  let thresholdValue;
+  browserWidth < 768 ? (thresholdValue = 0.1) : (thresholdValue = 0.6);
+
+  // Intersection observer hooks
+  const homeIntersection = useIntersection(titleRef, {
+    root: null,
+    rootMargin: "0px",
+    y: 0,
+    threshold: thresholdValue,
+  });
+
+  // Function to fadeIn element
+  const fadeIn = (element) => {
+    gsap.to(element, {
+      opacity: 1,
+      ease: "power4.out",
+      duration: 1,
+    });
+  };
+
+  // Function to fadeOut element
+  const fadeOut = (element) => {
+    gsap.to(element, {
+      opacity: 0,
+      ease: "power4.out",
+      duration: 1,
+    });
+  };
+
+  // Use useEffect to handle fadeIn and fadeOut animations based on scroll
+  useEffect(() => {
+    homeIntersection && homeIntersection.intersectionRatio < thresholdValue
+      ? fadeOut(".title")
+      : fadeIn(".title");
+  }, [homeIntersection]);
+
+  useEffect(() => {
+    homeIntersection && homeIntersection.intersectionRatio < thresholdValue
+      ? fadeOut(".profile-picture")
+      : fadeIn(".profile-picture");
+  }, [homeIntersection]);
+
+  // Letter animation code
+  useEffect(() => {
+    const titles = gsap.utils.toArray(".traits");
     const tl = gsap.timeline({ repeat: -1 });
 
-    // Loop through each title and apply animation
     titles.forEach((title) => {
-      // Use SplitTextJS to break each character into separate elements
       const splitTitle = new SplitTextJS(title);
 
-      // Animation to reveal characters from top with opacity
       tl.from(
         splitTitle.chars,
         {
@@ -27,26 +71,24 @@ function Home() {
           stagger: 0.04,
         },
         "<"
-      )
-        // Animation to hide characters by moving them up with opacity
-        .to(
-          splitTitle.chars,
-          {
-            opacity: 0,
-            y: -20,
-            rotateX: 90,
-            stagger: 0.04,
-          },
-          "<2.5"
-        );
+      ).to(
+        splitTitle.chars,
+        {
+          opacity: 0,
+          y: -20,
+          rotateX: 90,
+          stagger: 0.04,
+        },
+        "<2.5"
+      );
     });
-  }); 
+  }, []);
 
-  
+  // Render your component
   return (
     <div className="home-page">
       <section className="title-section">
-        <div className="title">
+        <div ref={titleRef} className="title">
           <h1 className="name">Nghia Huynh</h1>
           <div className="word-container">
             <div className="text-wrapper">
@@ -60,7 +102,6 @@ function Home() {
           </div>
         </div>
         <div className="profile-picture">
-          {/* Displaying a profile picture */}
           <img src={JackHuynh} alt="Jack Huynh" />
         </div>
       </section>
