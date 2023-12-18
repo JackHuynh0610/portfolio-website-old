@@ -3,6 +3,8 @@
     --primary-dark: #000000;
     --secondary-color: #acaa9b;
     --secondary-dark:#adab95;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
 }
 
 body {
