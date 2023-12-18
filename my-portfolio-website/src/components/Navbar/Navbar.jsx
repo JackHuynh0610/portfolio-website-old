@@ -1,4 +1,3 @@
-// Navbar.js
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import homeLogo from "/MyPortfolioWebsite/my-portfolio-website/src/assets/icons/homeIcon.svg";
