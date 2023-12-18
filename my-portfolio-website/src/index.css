@@ -14,6 +14,7 @@ body {
     font-size: clamp(1.125rem, 2vw, 1.25rem);
     background-color: #000000;
     margin-top: 0;
+    color: antiquewhite;
 }
 
 body::-webkit-scrollbar{

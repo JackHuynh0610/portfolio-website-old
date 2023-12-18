@@ -1,3 +1,10 @@
-p {
-    color: wheat;
+.about-page {
+  color: antiquewhite;
+  padding-top: 20px;
+}
+
+.about-title {
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
 }

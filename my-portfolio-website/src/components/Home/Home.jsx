@@ -9,12 +9,7 @@ function Home() {
   //-----------------------For scroll animation-------------------------//
   // Refs for the elements
   const titleRef = useRef(null);
-
-  // Calculate threshold value based on the browser width
-  const browserWidth = window.innerWidth;
-  let thresholdValue;
-  browserWidth < 768 ? (thresholdValue = 0.1) : (thresholdValue = 0.6);
-
+  const thresholdValue = 0.6;
   // Intersection observer hooks
   const homeIntersection = useIntersection(titleRef, {
     root: null,
@@ -23,7 +18,6 @@ function Home() {
     threshold: thresholdValue,
   });
 
-  // Function to fadeIn element
   const fadeIn = (element) => {
     gsap.to(element, {
       opacity: 1,
@@ -32,7 +26,6 @@ function Home() {
     });
   };
 
-  // Function to fadeOut element
   const fadeOut = (element) => {
     gsap.to(element, {
       opacity: 0,
@@ -41,20 +34,14 @@ function Home() {
     });
   };
 
-  // Use useEffect to handle fadeIn and fadeOut animations based on scroll
+  // Use useEffect to handle animations based on scroll
   useEffect(() => {
     homeIntersection && homeIntersection.intersectionRatio < thresholdValue
-      ? fadeOut(".title")
-      : fadeIn(".title");
+      ? fadeOut(".home-page")
+      : fadeIn(".home-page");
   }, [homeIntersection]);
 
-  useEffect(() => {
-    homeIntersection && homeIntersection.intersectionRatio < thresholdValue
-      ? fadeOut(".profile-picture")
-      : fadeIn(".profile-picture");
-  }, [homeIntersection]);
-
-  // Letter animation code
+  //letter animation code
   useEffect(() => {
     const titles = gsap.utils.toArray(".traits");
     const tl = gsap.timeline({ repeat: -1 });
@@ -86,9 +73,9 @@ function Home() {
 
   // Render your component
   return (
-    <div className="home-page">
+    <div className="home-page" id="home-page">
       <section className="title-section">
-        <div ref={titleRef} className="title">
+        <div ref={titleRef} className="home-title">
           <h1 className="name">Nghia Huynh</h1>
           <div className="word-container">
             <div className="text-wrapper">
