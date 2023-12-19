@@ -94,35 +94,24 @@ function About() {
         <section className="introduction">
           <div className="content-wrapper">
             <p className="introduction">
-              Allow me to introduce myself, I am a dedicated and passionate
-              individual currently pursuing a major in Computer Science at
-              Indiana University Bloomington. My journey in the world of
-              technology is characterized by a profound love for learning and an
-              insatiable curiosity to solve diverse problems. As a sophomore, I
-              have already demonstrated a strong commitment to the field of
-              software engineering, where expertise is cultivated through a
-              combination of academic rigor and hands-on experience. With a
-              thirst for knowledge that propels my academic pursuits and a
-              genuine enthusiasm for tackling challenges, I am eager to make
-              meaningful contributions to the ever-evolving landscape of
-              computer science.
+              Hello! I'm a dedicated Computer Science sophomore at Indiana
+              University Bloomington. My passion for technology is fueled by a
+              love for learning and curiosity. While the academic curriculum
+              provides a solid foundation, my true enthusiasm comes from
+              practical applications. I enjoy translating theoretical knowledge
+              into real-world solutions through coding and development. My
+              commitment to software engineering is evident in my early project
+              involvements. I actively seek opportunities for hands-on
+              experience, believing expertise comes from a blend of theory and
+              practice. Excited by the fast-paced nature of technology, I'm
+              eager to make meaningful contributions that reflect my passion and
+              positively impact the community. Ready to embrace the field's
+              constant evolution, I bring a mix of academic knowledge, hands-on
+              experience, and a commitment to excellence.
             </p>
             <img src={IU} className="iu-svg" alt="Indiana University Logo" />
           </div>
         </section>
-
-        <section className="skill">
-
-      </section>
-
-      <section className="work-experience">
-
-      </section>
-
-      <section className="projects">
-
-      </section>
-
         <section className="adventure">
           <div className="adventure-container">
             <div className="adventure-word-container">
@@ -141,10 +130,6 @@ function About() {
           </div>
         </section>
       </section>
-
-
-
-
     </div>
   );
 }
