@@ -17,7 +17,11 @@
     height: 100%;
     display: block;
     border-radius: 2%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 0.5s ease-in-out;
 }
+
 
 .image-slider-button{
     all: unset;

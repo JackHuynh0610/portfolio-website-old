@@ -30,14 +30,41 @@ function ImageSlider({ images }) {
 
   return (
     <div className="image-slider-container">
-      <img src={images[imageIndex]} className="image-slider-img" alt={`Image ${imageIndex + 1}`} />
-      <button onClick={showPrevImage} className="image-slider-button" style={{ left: 0 }}>
+      <div
+        className="img-cont"
+        style={{
+          widows: "100%",
+          height: "100%",
+          display: "flex",
+          overflow: "hidden",
+        }}
+      >
+        {images.map((url) => (
+          <img
+            style={{ translate: `${-100 * imageIndex}%` }}
+            key={url}
+            src={url}
+            className="image-slider-img"
+            alt={`Image ${imageIndex + 1}`}
+          />
+        ))}
+      </div>
+
+      <button
+        onClick={showPrevImage}
+        className="image-slider-button"
+        style={{ left: 0 }}
+      >
         <ArrowBigLeft />
       </button>
       <button onClick={toggleAutoScroll} className="image-toggle-button">
         {autoScroll ? <Pause /> : <Play />}
       </button>
-      <button onClick={showNextImage} className="image-slider-button" style={{ right: 0 }}>
+      <button
+        onClick={showNextImage}
+        className="image-slider-button"
+        style={{ right: 0 }}
+      >
         <ArrowBigRight />
       </button>
     </div>

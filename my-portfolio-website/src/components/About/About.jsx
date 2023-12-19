@@ -18,7 +18,7 @@ import adventure11 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\asse
 import adventure12 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\tracer_sleeping.jpg";
 
 import IU from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\Indiana_Hoosiers_logo.svg.png";
-
+import Avatar from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png"
 function About() {
   // State to manage opacity
   const [opacity, setOpacity] = useState(0);
@@ -91,8 +91,9 @@ function About() {
       <section className="about-section">
         <h2 className="about-title">About</h2>
 
-        <section className="introduction">
+        <section className="introduction-section">
           <div className="content-wrapper">
+          <img src={Avatar} className="avt" alt="Avatar" />
             <p className="introduction">
               Hello! I'm a dedicated Computer Science sophomore at Indiana
               University Bloomington. My passion for technology is fueled by a
@@ -109,7 +110,6 @@ function About() {
               constant evolution, I bring a mix of academic knowledge, hands-on
               experience, and a commitment to excellence.
             </p>
-            <img src={IU} className="iu-svg" alt="Indiana University Logo" />
           </div>
         </section>
         <section className="adventure">
