@@ -1,0 +1,53 @@
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.image-slider-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.image-slider-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 2%;
+}
+
+.image-slider-button{
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.image-slider-button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.image-slider-button > *{
+    stroke: white;
+    fill: black;
+    width: 2rem;
+    height: 2rem;
+}
+
+.image-slider-button:hover > *{
+    animation: squish 0.2s ease-in-out;
+}
+
+
+@keyframes squish {
+    50%{
+        scale: 1.4 0.6;
+    }
+}

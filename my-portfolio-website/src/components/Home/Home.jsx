@@ -58,14 +58,15 @@ function Home() {
     // Cleanup the observer on component unmount
     return () => observer.disconnect();
   }, []);
-  
 
   // Render your component
   return (
     <div className="home-page" id="home-page" style={{ opacity }}>
       <section className="title-section">
         <div className="home-title">
-        <a href="#about-page" className="about-link-home"><h1 className="name">Nghia Huynh</h1></a>
+          <a href="#about-page" className="about-link-home">
+            <h1 className="name">Nghia Huynh</h1>
+          </a>
           <div className="word-container">
             <div className="text-wrapper">
               {/* Text content to be animated */}

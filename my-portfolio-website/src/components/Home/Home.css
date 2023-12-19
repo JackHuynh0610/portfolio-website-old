@@ -15,10 +15,9 @@
   align-items: center;
 }
 
-.about-link-home{
+.about-link-home {
   text-decoration: none;
 }
-
 
 /* Styles for the title container */
 .home-title {
@@ -36,12 +35,10 @@
   transition: 0.2s ease-out;
 }
 
-.name:hover{
-  transform:translateY(-20px);
+.name:hover {
+  transform: translateY(-20px);
   transition: 0.3s ease-in-out;
 }
-
-
 
 /* Styles for the profile picture container */
 .profile-picture {
