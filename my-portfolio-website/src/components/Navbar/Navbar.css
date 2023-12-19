@@ -28,7 +28,8 @@
 
 .homeLogo,
 .aboutLogo,
-.contactLogo {
+.contactLogo,
+.skillLogo {
   width: 30px; /* Set width for the logos */
   opacity: 80%;
   transition: 0.3s ease;
@@ -38,7 +39,8 @@
 
 .homeLogo:hover,
 .aboutLogo:hover,
-.contactLogo:hover {
+.contactLogo:hover,
+.skillLogo:hover {
   width: 30px; /* Set width for the logos */
   opacity: 100%;
   transition: 0.3s ease;
@@ -72,13 +74,15 @@
 
   .homeLogo,
   .aboutLogo,
-  .contactLogo {
+  .contactLogo,
+  .skillLogo {
     margin-bottom: 1rem;
     opacity: 65%;
   }
   .homeLogo:hover,
   .aboutLogo:hover,
-  .contactLogo:hover {
+  .contactLogo:hover,
+  .skillLogo:hover {
     opacity: 100%; /* Change the opacity on hover */
     transform: translateY(-5px); /* Move the icon 5 pixels upward on hover */
   }

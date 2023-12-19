@@ -1,6 +1,6 @@
 import "./About.css";
 import React, { useEffect, useState } from "react";
-import ImageSlider from "./ImageSlider";
+import ImageSlider from "./aboutSubComponent/ImageSlider";
 import gsap from "gsap";
 import SplitTextJS from "split-text-js";
 
@@ -16,7 +16,6 @@ import adventure10 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\asse
 import adventure9 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\mexico.jpg";
 import adventure11 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\halong_bay.jpg";
 import adventure12 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\tracer_sleeping.jpg";
-
 
 import IU from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\Indiana_Hoosiers_logo.svg.png";
 
@@ -83,7 +82,7 @@ function About() {
     adventure8,
     adventure7,
     adventure11,
-    adventure12
+    adventure12,
   ];
 
   return (
@@ -113,36 +112,16 @@ function About() {
         </section>
 
         <section className="skill">
-          <div className="skill-container">
-          <h2>Skill</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
-              consequatur iusto laudantium debitis ullam quaerat, voluptate culpa
-              sint illum quibusdam accusantium molestiae! Consequatur ex animi
-              nemo doloribus magnam voluptatem.
-            </p>
-            </div>
-        </section>
 
-        <section className="work-experience">
-          <h2>Work Experience</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
-            consequatur iusto laudantium debitis ullam quaerat, voluptate culpa
-            sint illum quibusdam accusantium molestiae! Consequatur ex animi
-            nemo doloribus magnam voluptatem.
-          </p>
-        </section>
-        
-        <section className="project">
-          <h2>Project</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
-            consequatur iusto laudantium debitis ullam quaerat, voluptate culpa
-            sint illum quibusdam accusantium molestiae! Consequatur ex animi
-            nemo doloribus magnam voluptatem.
-          </p>
-        </section>
+      </section>
+
+      <section className="work-experience">
+
+      </section>
+
+      <section className="projects">
+
+      </section>
 
         <section className="adventure">
           <div className="adventure-container">
@@ -161,16 +140,11 @@ function About() {
             </div>
           </div>
         </section>
-
-        <section className="hobbies">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
-            consequatur iusto laudantium debitis ullam quaerat, voluptate culpa
-            sint illum quibusdam accusantium molestiae! Consequatur ex animi
-            nemo doloribus magnam voluptatem.
-          </p>
-        </section>
       </section>
+
+
+
+
     </div>
   );
 }
