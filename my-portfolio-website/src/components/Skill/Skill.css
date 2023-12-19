@@ -1,0 +1,19 @@
+.skill-line{
+    border-top: 1px solid antiquewhite;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.skill-page {
+  color: antiquewhite;
+  padding-top: 20px;
+  margin-top: 7rem;
+  transition: 0.9s ease-in-out;
+}
+
+.skill-title {
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
+}
+

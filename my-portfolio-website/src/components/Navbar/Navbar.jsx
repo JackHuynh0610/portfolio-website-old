@@ -36,7 +36,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/" className="skill-link" onClick={closeMenu}>
+            <a href="#skill-page" className="skill-link" onClick={closeMenu}>
               <img src={skillLogo} alt="homeLogo" className="skillLogo" />
             </a>
           </li>
