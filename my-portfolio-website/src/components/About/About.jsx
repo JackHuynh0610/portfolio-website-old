@@ -17,7 +17,6 @@ import adventure9 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\asset
 import adventure11 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\halong_bay.jpg";
 import adventure12 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\tracer_sleeping.jpg";
 
-import IU from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\Indiana_Hoosiers_logo.svg.png";
 import Avatar from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png"
 function About() {
   // State to manage opacity
