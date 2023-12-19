@@ -91,8 +91,8 @@ function About() {
       <div className="line"></div>
       <section className="about-section">
         <h2 className="about-title">About</h2>
-        <section className="introduction"></section>
-        <section className="skill">
+
+        <section className="introduction">
           <div className="content-wrapper">
             <p className="introduction">
               Allow me to introduce myself, I am a dedicated and passionate
@@ -111,7 +111,21 @@ function About() {
             <img src={IU} className="iu-svg" alt="Indiana University Logo" />
           </div>
         </section>
+
+        <section className="skill">
+          <div className="skill-container">
+          <h2>Skill</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
+              consequatur iusto laudantium debitis ullam quaerat, voluptate culpa
+              sint illum quibusdam accusantium molestiae! Consequatur ex animi
+              nemo doloribus magnam voluptatem.
+            </p>
+            </div>
+        </section>
+
         <section className="work-experience">
+          <h2>Work Experience</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
             consequatur iusto laudantium debitis ullam quaerat, voluptate culpa
@@ -119,7 +133,9 @@ function About() {
             nemo doloribus magnam voluptatem.
           </p>
         </section>
+        
         <section className="project">
+          <h2>Project</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, nam
             consequatur iusto laudantium debitis ullam quaerat, voluptate culpa

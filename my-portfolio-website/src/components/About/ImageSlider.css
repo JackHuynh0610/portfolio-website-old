@@ -45,6 +45,17 @@
     animation: squish 0.2s ease-in-out;
 }
 
+.image-toggle-button{
+    all: unset;
+    
+    padding-top: 2%;
+    padding-left: 50%;
+    stroke: antiquewhite;
+}
+
+.image-toggle-button:hover > *{
+    animation: squish 0.2s ease-in-out;
+}
 
 @keyframes squish {
     50%{
