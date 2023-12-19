@@ -4,7 +4,7 @@ import "./ImageSlider.css";
 
 function ImageSlider({ images }) {
   const [imageIndex, setImageIndex] = useState(0);
-  const [autoScroll, setAutoScroll] = useState(true);
+  const [autoScroll, setAutoScroll] = useState(false);
 
   function showNextImage() {
     setImageIndex((index) => (index === images.length - 1 ? 0 : index + 1));
