@@ -66,8 +66,8 @@
   color: antiquewhite;
 }
 
-/* Media query for screens up to 800px width */
-@media screen and (max-width: 800px) {
+/* Media query for screens up to 1000px width */
+@media screen and (max-width: 950px) {
   /* Adjust the layout for smaller screens */
   .title-section {
     display: flex;
@@ -84,7 +84,7 @@
   .profile-picture {
     padding-top: 0;
     flex: 1;
-    max-width: 80%;
+    max-width: 70%;
     margin-top: 80px;
   }
 
