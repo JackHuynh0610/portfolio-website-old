@@ -19,7 +19,6 @@ import Git from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icon
 import Github from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\github-mark-c791e9551fe4\\github-mark\\github-mark-white.svg";
 
 
-
 function Skill() {
     // State to manage opacity
   const [opacity, setOpacity] = useState(0);
@@ -58,6 +57,9 @@ function Skill() {
                 <Card title="Database" icons={database}/>
                 <Card title="Tools" icons={tools}/>
             </div>
+            <section>
+
+            </section>
         </div>
 
     );

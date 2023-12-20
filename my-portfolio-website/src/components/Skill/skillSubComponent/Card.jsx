@@ -3,8 +3,7 @@ import './Card.css';
 
 function Card(props) {
   return (
-    <div className="card-wrapper">
-      <div className="card">
+    <div className="card">
         <section>
           <header>
             <h2 className='card-title'>{props.title}</h2>
@@ -18,7 +17,6 @@ function Card(props) {
               </div>
             ))}
         </div>
-      </div>
     </div>
   );
 }

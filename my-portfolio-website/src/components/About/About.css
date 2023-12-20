@@ -12,6 +12,7 @@
 }
 
 .line{
+    opacity: 70%;
     border-top: 1px solid antiquewhite;
     width: 95%;
     margin: 0 auto;

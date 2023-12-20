@@ -1,14 +1,26 @@
 .card{
+    box-shadow: 1 4px 8px rgba(170, 153, 153, 0.678); /* Adjust the values for the 3D effect */
+    transition: box-shadow 0.2s ease; /* Add a smooth transition effect */
     border: 1px solid white;
     border-radius: 5%;
     width: 600px;
     height: 300px;
 }
 
+.card:hover {
+    box-shadow: 0 8px 16px rgba(192, 182, 182, 0.788); /* Adjust the values for the hover effect */
+}
+
+.card:hover .icon{
+    opacity: 1;
+}
+
+
 .card-title{
     text-align: center;
     margin-bottom: 6px;
 }
+
 
 .icon-container{
     display: flex;
@@ -17,13 +29,22 @@
 }
 
 .icon{
+    opacity: 80%;
     width: 70px;
     height: 70px;
     margin: 20px;
 }
 
+
+
 .info{
     flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px){
+    .icon{
+        opacity: 1;
+    }
 }
