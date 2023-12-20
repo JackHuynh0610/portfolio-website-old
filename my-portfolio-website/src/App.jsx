@@ -5,7 +5,7 @@ import About from "./components/About/About";
 import Skill from "./components/Skill/Skill";
 
 function App() {
-  
+
   return (
     <div className="App">
       <Navbar />
