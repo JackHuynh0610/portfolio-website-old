@@ -1,0 +1,29 @@
+.card{
+    border: 1px solid white;
+    border-radius: 5%;
+    width: 600px;
+    height: 300px;
+}
+
+.card-title{
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
+.info{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -16,8 +16,9 @@ import adventure10 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\asse
 import adventure9 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\mexico.jpg";
 import adventure11 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\halong_bay.jpg";
 import adventure12 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\tracer_sleeping.jpg";
-
 import Avatar from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png"
+
+
 function About() {
   // State to manage opacity
   const [opacity, setOpacity] = useState(0);
