@@ -53,8 +53,8 @@ function Skill() {
             <div className="skill-line"></div>
             <h2 className="skill-title">Skills</h2>
             <div className="card-container">
-                <Card title="Language" icons={language}/>
-                <Card title="Database" icons={database}/>
+                <Card title="Languages" icons={language}/>
+                <Card title="Databases" icons={database}/>
                 <Card title="Tools" icons={tools}/>
             </div>
             <section>
