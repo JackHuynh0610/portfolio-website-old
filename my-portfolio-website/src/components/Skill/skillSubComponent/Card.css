@@ -30,8 +30,10 @@
 
 .icon{
     opacity: 80%;
-    width: 3em;
-    height: 3em;
+    width: 10vw; /* Adjust the value as needed */
+    height: 10vw; /* Adjust the value as needed */
+    max-width: 3em; /* Set a maximum width for the icon */
+    max-height: 3em; /* Set a maximum height for the icon */
     margin: 20px;
 }
 

@@ -58,7 +58,7 @@ function Skill() {
                 <Card title="Tools" icons={tools}/>
             </div>
             <section>
-
+              <h2 className="skill-title">Projects</h2>
             </section>
         </div>
 
