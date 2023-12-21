@@ -25,3 +25,81 @@
   justify-content: center;
   gap: 20px;
 }
+
+.project-container{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+
+.ray-card{
+  overflow: hidden;
+  position: relative;
+}
+
+.ray-card img:hover{
+  transform: scale(1.2);
+  opacity: 100%;
+}
+
+.ray-card img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 85%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project1,
+.project2 {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.project-title{
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-text{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: rgb(252, 252, 252);
+  padding: 5px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.ray-card:hover .guide-text{
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ray-card img {
+    opacity: 1;
+    
+  }
+
+  .project1,
+  .project2 {
+    margin: 10px 0;
+  }
+
+  .guide-text{
+    opacity: 1;
+  }
+}
