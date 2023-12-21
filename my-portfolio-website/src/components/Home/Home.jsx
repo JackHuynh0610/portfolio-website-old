@@ -49,7 +49,7 @@ function Home() {
   useEffect(() => {
     // Create an IntersectionObserver
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5, // Adjust the threshold as needed
+      threshold: 0.3, // Adjust the threshold as needed
     });
 
     // Observe the target element

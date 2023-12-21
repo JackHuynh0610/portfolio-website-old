@@ -33,7 +33,7 @@ function Skill() {
   useEffect(() => {
     // Create an IntersectionObserver
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.3, // Adjust the threshold as needed
+      threshold: 0.2, // Adjust the threshold as needed
     });
 
     // Observe the target element
