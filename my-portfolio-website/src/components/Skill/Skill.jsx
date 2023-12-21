@@ -66,18 +66,26 @@ function Skill() {
           <div className="project1">
             <h3>RayMarching</h3>
             <div className="ray-card" id="raymarch">
-              <a href="https://github.com/JackHuynh0610/RayMarching" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/JackHuynh0610/RayMarching"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={RayMarch} alt="ray-marching-picture" />
-                <p className="guide-text">Learn more</p>
+                <p className="guide-text">Click thumbnail to learn more</p>
               </a>
             </div>
           </div>
           <div className="project2">
             <h3>RayCasting-3D</h3>
             <div className="ray-card" id="raycast">
-              <a href="https://github.com/JackHuynh0610/RayCasting-3D" target="_blank" rel="noopener noreferrer">
-                <img src={RayCast} alt="ray-casting-picture"/>
-                <p className="guide-text">Learn more</p>
+              <a
+                href="https://github.com/JackHuynh0610/RayCasting-3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={RayCast} alt="ray-casting-picture" />
+                <p className="guide-text">Click thumbnail to learn more</p>
               </a>
             </div>
           </div>
