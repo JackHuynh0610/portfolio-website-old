@@ -53,6 +53,10 @@
     all: unset;
     padding-top: 2%;
     stroke: antiquewhite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px; /* Adjust the bottom value as needed */
 }
 
 .image-toggle-button:hover > *{
