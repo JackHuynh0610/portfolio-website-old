@@ -79,6 +79,9 @@
   .name {
     font-size: 4em; /* Adjust the font size as needed */
   }
+  .traits{
+    font-size: larger;
+  }
 
   /* Adjust the maximum width of the image for smaller screens */
   .profile-picture {
