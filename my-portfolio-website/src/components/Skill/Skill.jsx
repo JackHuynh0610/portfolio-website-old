@@ -21,8 +21,6 @@ import Github from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\i
 import RayMarch from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\background\\cute-hd-background-cream-design-vector\\rayMarch.png";
 import RayCast from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\background\\cute-hd-background-cream-design-vector\\raycast.png";
 
-import RayMarchGif from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\videos\\raymarch.gif";
-import RayCastGif from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\videos\\raycasting.gif";
 function Skill() {
   // State to manage opacity
   const [opacity, setOpacity] = useState(0);
