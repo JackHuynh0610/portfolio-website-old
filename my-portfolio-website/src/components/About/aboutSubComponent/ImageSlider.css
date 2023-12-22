@@ -1,71 +1,80 @@
-
-
-*, *::before, *::after{
-    box-sizing: border-box;
+/* Apply box-sizing to all elements for consistent box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.image-slider-container{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 50px;
+/* Styles for the image slider container */
+.image-slider-container {
+  width: 100%; /* Set full width */
+  height: 100%; /* Set full height */
+  position: relative; /* Set relative positioning */
+  padding: 50px; /* Add padding around the container */
 }
 
-.image-slider-img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 2%;
-    flex-shrink: 0;
-    flex-grow: 0;
-    transition: translate 0.5s ease-in-out;
+/* Styles for the image slider images */
+.image-slider-img {
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  width: 100%; /* Set full width */
+  height: 100%; /* Set full height */
+  display: block; /* Display as block element */
+  border-radius: 2%; /* Add border-radius for rounded corners */
+  flex-shrink: 0; /* Prevent image from shrinking */
+  flex-grow: 0; /* Prevent image from growing */
+  transition: transform 0.5s ease-in-out; /* Add transition effect for smooth translation */
 }
 
-
-.image-slider-button{
-    all: unset;
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    padding: 2rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+/* Styles for the image slider buttons */
+.image-slider-button {
+  all: unset; /* Reset all styles */
+  display: block; /* Display as block element */
+  position: absolute; /* Set absolute positioning */
+  top: 0;
+  bottom: 0;
+  padding: 2rem; /* Add padding to the buttons */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.2s ease-in-out; /* Add transition effect for background color */
 }
 
-.image-slider-button:hover{
-    background-color: rgba(0, 0, 0, 0.2);
+/* Styles for the hover effect on image slider buttons */
+.image-slider-button:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Add semi-transparent background on hover */
 }
 
-.image-slider-button > *{
-    stroke: white;
-    fill: black;
-    width: 2rem;
-    height: 2rem;
+/* Styles for the icons inside the image slider buttons */
+.image-slider-button > * {
+  stroke: white; /* Set stroke color to white */
+  fill: black; /* Set fill color to black */
+  width: 2rem; /* Set width of the icon */
+  height: 2rem; /* Set height of the icon */
 }
 
-.image-slider-button:hover > *{
-    animation: squish 0.2s ease-in-out;
+/* Styles for the hover effect on icon inside image slider buttons */
+.image-slider-button:hover > * {
+  animation: squish 0.2s ease-in-out; /* Add animation for squish effect on hover */
 }
 
-.image-toggle-button{
-    all: unset;
-    padding-top: 2%;
-    stroke: antiquewhite;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px; /* Adjust the bottom value as needed */
-    cursor: pointer;
+/* Styles for the image toggle button */
+.image-toggle-button {
+  all: unset; /* Reset all styles */
+  padding-top: 2%; /* Add padding to the button */
+  stroke: antiquewhite; /* Set stroke color to antiquewhite */
+  position: absolute; /* Set absolute positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal translation to center */
+  bottom: 10px; /* Set distance from the bottom */
+  cursor: pointer; /* Set cursor to pointer */
 }
 
-.image-toggle-button:hover > *{
-    animation: squish 0.2s ease-in-out;
+/* Styles for the hover effect on icon inside image toggle button */
+.image-toggle-button:hover > * {
+  animation: squish 0.2s ease-in-out; /* Add animation for squish effect on hover */
 }
 
+/* Keyframes for squish animation */
 @keyframes squish {
-    50%{
-        scale: 1.4 0.6;
-    }
+  50% {
+    transform: scale(1.4, 0.6); /* Scale the element for squish effect */
+  }
 }
