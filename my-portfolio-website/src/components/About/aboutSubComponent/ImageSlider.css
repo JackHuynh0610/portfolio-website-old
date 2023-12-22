@@ -57,6 +57,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px; /* Adjust the bottom value as needed */
+    cursor: pointer;
 }
 
 .image-toggle-button:hover > *{

@@ -55,6 +55,7 @@
   height: auto;
   border-radius: 50%; /* Add border-radius for rounded corners */
   box-shadow: 5px 0 10px rgba(255, 255, 255, 0.137);
+  animation: moveUpDown 4s linear infinite;
 }
 
 /* Styles for paragraphs */
@@ -123,5 +124,14 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
