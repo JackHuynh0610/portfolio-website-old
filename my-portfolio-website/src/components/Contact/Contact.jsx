@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Contact.css"
-
+import emailjs from "@emailjs/browser"
 import Github from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\github-mark-c791e9551fe4\\github-mark\\github-mark-white.svg";
+
 import LinkedIn from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\linkin.svg";
 function Contact() {
     // State to manage opacity
@@ -13,6 +14,19 @@ function Contact() {
       setOpacity(entry.isIntersecting ? 1 : 0);
     });
   };
+
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_f3lsqdb', 'template_ow78qcg', form.current, '1pG40r2lab3v-UqTw')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+    
 
   useEffect(() => {
     // Create an IntersectionObserver
@@ -31,11 +45,11 @@ function Contact() {
         <div className="contact-line"></div>
         <h2 className="contact-title">Contact</h2>
         <div className="form-container">
-            <form className="form">
+            <form className="form" ref={form} onSubmit={sendEmail}>
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="your name"required/>
+                <input type="text" id="name" name="user_name" placeholder="your name"required/>
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="your email" required/>
+                <input type="email" id="email" name="user_email" placeholder="your email" required/>
                 <label htmlFor="message">Message:</label>
                 <textarea id="message" name="message" rows="6" placeholder="what do you want to say?" required/>
                 <input type="submit" value="Send"/>
