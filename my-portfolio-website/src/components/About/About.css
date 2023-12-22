@@ -1,90 +1,101 @@
+/* Styles for the about page */
 .about-page {
-  color: antiquewhite;
-  padding-top: 20px;
-  margin-top: 7rem;
-  transition: 0.9s ease-in-out;
+  color: antiquewhite; /* Set text color */
+  padding-top: 20px; /* Add padding at the top */
+  margin-top: 7rem; /* Add margin at the top */
+  transition: 0.9s ease-in-out; /* Add transition effect */
 }
 
+/* Styles for the about title */
 .about-title {
   display: flex;
-  font-size: 3em;
-  justify-content: center;
+  font-size: 3em; /* Set font size */
+  justify-content: center; /* Center the text horizontally */
 }
 
-.line{
-    opacity: 70%;
-    border-top: 1px solid antiquewhite;
-    width: 95%;
-    margin: 0 auto;
+/* Styles for the separating line */
+.line {
+  opacity: 70%; /* Set opacity */
+  border-top: 1px solid antiquewhite; /* Add a top border */
+  width: 95%; /* Set width */
+  margin: 0 auto; /* Center the line horizontally */
 }
 
-.image-slider-container-adventure{
-    max-width: 1000px;
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
-    aspect-ratio: 10/6;
-    padding: 20px;
+/* Styles for the adventure image slider container */
+.image-slider-container-adventure {
+  max-width: 1000px; /* Set maximum width */
+  width: 100%; /* Set full width */
+  height: 700px; /* Set height */
+  margin: 0 auto; /* Center the container horizontally */
+  aspect-ratio: 10/6; /* Set aspect ratio for responsive scaling */
+  padding: 20px; /* Add padding */
 }
 
-.adventure-header{
-  line-height: 0;
-  text-align: center;
-  margin: 0;
+/* Styles for adventure headers */
+.adventure-header {
+  line-height: 0; /* Set line height to 0 for vertical alignment */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove margin */
 }
 
-.adventure-word-container{
-  padding-top: 30px;
+/* Styles for the adventure word container */
+.adventure-word-container {
+  padding-top: 30px; /* Add padding at the top */
 }
 
-.sub-title{
-  text-align: center;
-  padding: 2px;
+/* Styles for the sub-title */
+.sub-title {
+  text-align: center; /* Center the text */
+  padding: 2px; /* Add padding */
 }
 
+/* Styles for the content wrapper */
 .content-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 3em;
+  margin: 3em; /* Add margin */
 }
 
-
+/* Styles for the introduction text */
 .introduction {
-  text-indent: 20px;
-  text-align: center;
-  padding: 5px;
-  font-size: 1.5em;
-  line-height: 1.5;
+  text-indent: 20px; /* Set text indentation */
+  text-align: center; /* Center the text */
+  padding: 5px; /* Add padding */
+  font-size: 1.5em; /* Set font size */
+  line-height: 1.5; /* Set line height */
 }
 
-.avt{
-  width: 15em;
-  border-radius: 50%;
-  margin: 2em;
-  animation: moveUpDown 4s linear infinite;
+/* Styles for the avatar image */
+.avt {
+  width: 15em; /* Set width */
+  border-radius: 50%; /* Add border-radius for rounded corners */
+  margin: 2em; /* Add margin */
+  animation: moveUpDown 4s linear infinite; /* Add animation */
 }
 
-
-@media screen and (max-width: 800px){
+/* Media query for screens up to 800px width */
+@media screen and (max-width: 800px) {
+  /* Adjust styles for smaller screens */
   .content-wrapper {
     flex-direction: column;
-    margin: 1em;
+    margin: 1em; /* Adjust margin */
   }
 
-  .avt{
-    width: 15em;
+  .avt {
+    width: 15em; /* Adjust width */
     border-radius: 50%;
-    margin: 2em;
+    margin: 2em; /* Adjust margin */
   }
 
   .introduction {
-    font-size: 0.9em;
-    font-weight: 600;
+    font-size: 0.9em; /* Adjust font size */
+    font-weight: 600; /* Set font weight */
   }
 }
 
+/* Keyframes for moveUpDown animation */
 @keyframes moveUpDown {
   0%, 100% {
     transform: translateY(0);

@@ -16,8 +16,7 @@ import adventure10 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\asse
 import adventure9 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\mexico.jpg";
 import adventure11 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\halong_bay.jpg";
 import adventure12 from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\memories\\tracer_sleeping.jpg";
-import Avatar from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png"
-
+import Avatar from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png";
 
 function About() {
   // State to manage opacity
@@ -43,7 +42,7 @@ function About() {
     return () => observer.disconnect();
   }, []);
 
-  //letter animation code
+  // Letter animation code just like in home but with a twist
   useEffect(() => {
     const titles = gsap.utils.toArray(".adventure-header");
     const tl = gsap.timeline({ repeat: -1 });
@@ -70,6 +69,7 @@ function About() {
     });
   }, []);
 
+  //array of images
   const IMAGES = [
     adventure1,
     adventure3,
@@ -84,7 +84,7 @@ function About() {
     adventure11,
     adventure12,
   ];
-
+  //render
   return (
     <div className="about-page" id="about-page" style={{ opacity }}>
       <div className="line"></div>
@@ -92,7 +92,7 @@ function About() {
         <h2 className="about-title">About</h2>
         <section className="introduction-section">
           <div className="content-wrapper">
-          <img src={Avatar} className="avt" alt="Avatar" />
+            <img src={Avatar} className="avt" alt="Avatar" />
             <p className="introduction">
               Hello! I'm a dedicated Computer Science sophomore at Indiana
               University Bloomington. My passion for technology is fueled by a
