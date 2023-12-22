@@ -3,7 +3,7 @@ import gsap from "gsap";
 import SplitTextJS from "split-text-js";
 import "./Home.css";
 import JackHuynh from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png";
-
+import Resume from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\background\\Resume.pdf";
 function Home() {
   // State to manage opacity
   const [opacity, setOpacity] = useState(0);
@@ -77,7 +77,7 @@ function Home() {
               <p className="traits">Creative</p>
             </div>
           </div>
-          <button id="downloadButton">Download My Resume</button>
+          <a href={Resume} download={Resume}><button id="downloadButton">Download My Resume</button></a>
         </div>
         <div className="profile-picture">
           <img src={JackHuynh} alt="Jack Huynh" />
