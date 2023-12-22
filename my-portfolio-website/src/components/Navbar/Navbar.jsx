@@ -41,7 +41,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/" className="contact-link" onClick={closeMenu}>
+            <a href="#contact-page" className="contact-link" onClick={closeMenu}>
               <img
                 src={contactLogo}
                 alt="contactLogo"
