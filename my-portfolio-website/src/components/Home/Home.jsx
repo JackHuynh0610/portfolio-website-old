@@ -4,11 +4,12 @@ import SplitTextJS from "split-text-js";
 import "./Home.css";
 import JackHuynh from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\photography\\Avatar_Cropped_Image.png";
 import Resume from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\background\\Resume.pdf";
+
 function Home() {
   // State to manage opacity
   const [opacity, setOpacity] = useState(0);
 
-  //letter animation code
+  // Letter animation code using SplitTextJS and GSAP
   useEffect(() => {
     const titles = gsap.utils.toArray(".traits");
     const tl = gsap.timeline({ repeat: -1 });
@@ -46,6 +47,7 @@ function Home() {
     });
   };
 
+  // useEffect to set up Intersection Observer on component mount
   useEffect(() => {
     // Create an IntersectionObserver
     const observer = new IntersectionObserver(handleIntersection, {
@@ -64,6 +66,7 @@ function Home() {
     <div className="home-page" id="home-page" style={{ opacity }}>
       <section className="title-section">
         <div className="home-title">
+          {/* Link to the about page */}
           <a href="#about-page" className="about-link-home">
             <h1 className="name">Nghia Huynh</h1>
           </a>
@@ -77,8 +80,12 @@ function Home() {
               <p className="traits">Creative</p>
             </div>
           </div>
-          <a href={Resume} download={Resume}><button id="downloadButton">Download My Resume</button></a>
+          {/* Download button for the resume */}
+          <a href={Resume} download={Resume}>
+            <button id="downloadButton">Download My Resume</button>
+          </a>
         </div>
+        {/* Profile picture */}
         <div className="profile-picture">
           <img src={JackHuynh} alt="Jack Huynh" />
         </div>

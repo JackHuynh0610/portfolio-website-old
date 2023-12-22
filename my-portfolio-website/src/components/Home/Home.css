@@ -86,8 +86,8 @@
   opacity: 1;
 }
 
-/* Media query for screens up to 1000px width */
-@media screen and (max-width: 950px) {
+/* Media query for screens up to 800px width */
+@media screen and (max-width: 800px) {
   /* Adjust the layout for smaller screens */
   .title-section {
     display: flex;
