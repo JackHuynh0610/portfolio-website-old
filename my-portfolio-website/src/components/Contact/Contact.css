@@ -7,6 +7,7 @@
 
   .contact-page{
     transition: 0.4s ease;
+    margin-bottom: 200px;
   }
 
   .contact-title {
@@ -76,6 +77,7 @@ label {
 }
 
 form {
+    margin-top: 10px;
     background-color: #252222;
     padding: 20px;
     border-radius: 8px;
@@ -84,5 +86,31 @@ form {
     width: 100%;
 }
 
+#announce{
+    text-align: center;
+    font-size: 2rem;
+    background-color: none;
+    transition: 0.2s ease;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 5px;
+    width: 20%;  
+    margin: 0 auto;
+}
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(
+        -40px
+      ); /* Optional: Add a slight upward translation */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    
+  }
   

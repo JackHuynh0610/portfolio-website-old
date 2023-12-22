@@ -39,10 +39,10 @@ function Contact() {
           // Hide the message after 5 seconds
           setTimeout(() => {
             setMessage({ text: "", type: "" });
-          }, 5000);
+          }, 10000000);
         },
         (error) => {
-          setMessage({ text: "Error sending message", type: "error" });
+          setMessage({ text: "Error:Please try to resend or contact me through linkedin", type: "error" });
           console.log(error.text);
         }
       );
@@ -69,6 +69,11 @@ function Contact() {
     <div className="contact-page" id="contact-page" style={{ opacity }}>
       <div className="contact-line"></div>
       <h2 className="contact-title">Contact</h2>
+      {message.text && (
+        <div className={`message ${message.type}`} id="announce">
+          {message.text}
+        </div>
+      )}
       <div className="form-container">
         <form className="form" ref={form} onSubmit={sendEmail}>
           <label htmlFor="name">Name:</label>
@@ -104,11 +109,6 @@ function Contact() {
           <input type="submit" value="Send" />
         </form>
       </div>
-      {message.text && (
-        <div className={`message ${message.type}`} id="announce">
-          {message.text}
-        </div>
-      )}
       <div className="connection-container">
         <a href="https://github.com/JackHuynh0610" target="_blank" rel="noopener noreferrer">
           <img src={Github} alt="git-hub icons" className="connection-icon" />
