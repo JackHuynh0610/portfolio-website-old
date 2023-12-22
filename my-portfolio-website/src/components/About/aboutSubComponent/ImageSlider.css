@@ -39,7 +39,12 @@
 
 /* Styles for the hover effect on image slider buttons */
 .image-slider-button:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Add semi-transparent background on hover */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Add semi-transparent background on hover */
 }
 
 /* Styles for the icons inside the image slider buttons */

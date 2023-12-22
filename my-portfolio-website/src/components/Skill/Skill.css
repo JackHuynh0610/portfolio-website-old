@@ -1,10 +1,12 @@
-.skill-line{
+/* Horizontal line styling */
+.skill-line {
   opacity: 70%;
-    border-top: 1px solid antiquewhite;
-    width: 95%;
-    margin: 0 auto;
+  border-top: 1px solid antiquewhite;
+  width: 95%;
+  margin: 0 auto;
 }
 
+/* Skill page container styling */
 .skill-page {
   color: antiquewhite;
   padding-top: 20px;
@@ -13,20 +15,23 @@
   padding-bottom: 100px;
 }
 
+/* Skill title styling */
 .skill-title {
   display: flex;
   font-size: 3em;
   justify-content: center;
 }
 
-.card-container{
+/* Container for skill cards styling */
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.project-container{
+/* Container for projects styling */
+.project-container {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -34,16 +39,19 @@
   text-align: center;
 }
 
-.ray-card{
+/* Styling for individual project cards */
+.ray-card {
   overflow: hidden;
   position: relative;
 }
 
-.ray-card img:hover{
+/* Hover effect for project images */
+.ray-card img:hover {
   transform: scale(1.2);
   opacity: 95%;
 }
 
+/* Styling for project images */
 .ray-card img {
   max-width: 90%;
   height: auto;
@@ -53,19 +61,22 @@
   transition: transform 0.3s ease;
 }
 
+/* Styling for individual project containers */
 .project1,
 .project2 {
   flex: 1;
   margin: 0 10px;
 }
 
-.project-title{
+/* Styling for project title */
+.project-title {
   font-size: 2em;
   display: flex;
   justify-content: center;
 }
 
-.guide-text{
+/* Styling for guide text in project cards */
+.guide-text {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -78,27 +89,32 @@
   transition: 0.4s ease-in-out;
 }
 
-.ray-card:hover .guide-text{
+/* Hover effect for guide text in project cards */
+.ray-card:hover .guide-text {
   opacity: 1;
 }
 
+/* Media query for screens up to 800px width */
 @media screen and (max-width: 800px) {
+  /* Adjust layout for smaller screens */
   .project-container {
     flex-direction: column;
     align-items: center;
   }
 
+  /* Reset opacity for project images on smaller screens */
   .ray-card img {
     opacity: 1;
-    
   }
 
+  /* Adjust margin for individual project containers on smaller screens */
   .project1,
   .project2 {
     margin: 10px 0;
   }
 
-  .guide-text{
+  /* Display guide text with full opacity on smaller screens */
+  .guide-text {
     opacity: 1;
   }
 }

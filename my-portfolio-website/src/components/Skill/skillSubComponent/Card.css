@@ -1,52 +1,57 @@
-.card{
-    box-shadow: 1 4px 8px rgba(170, 153, 153, 0.678); /* Adjust the values for the 3D effect */
-    transition: box-shadow 0.2s ease; /* Add a smooth transition effect */
-    border: 1px solid white;
-    border-radius: 5%;
-    width: 600px;
-    height: 300px;
+/* Styles for the card container */
+.card {
+  box-shadow: 1 4px 8px rgba(170, 153, 153, 0.678); /* Set box shadow for the card */
+  transition: box-shadow 0.2s ease; /* Add transition effect for box shadow */
+  border: 1px solid white; /* Add a white border to the card */
+  border-radius: 5%; /* Add border-radius for rounded corners */
+  width: 600px; /* Set width of the card */
+  height: 300px; /* Set height of the card */
 }
 
+/* Hover styles for the card */
 .card:hover {
-    box-shadow: 0 8px 16px rgba(192, 182, 182, 0.788); /* Adjust the values for the hover effect */
+  box-shadow: 0 8px 16px rgba(192, 182, 182, 0.788); /* Change box shadow on hover */
 }
 
-.card:hover .icon{
+/* Hover styles for the icon inside the card */
+.card:hover .icon {
+  opacity: 1; /* Change opacity on hover */
+}
+
+/* Styles for the title inside the card */
+.card-title {
+  text-align: center; /* Center-align the text */
+  margin-bottom: 6px; /* Add margin at the bottom */
+}
+
+/* Styles for the icon container inside the card */
+.icon-container {
+  display: flex; /* Display as flex container */
+  flex-wrap: wrap; /* Allow wrapping of icon elements */
+  align-items: center; /* Align items to the center */
+}
+
+/* Styles for the icon inside the card */
+.icon {
+  opacity: 80%; /* Set initial opacity */
+  width: 10vw; /* Set width relative to viewport width */
+  height: 10vw; /* Set height relative to viewport width */
+  max-width: 3em; /* Set maximum width */
+  max-height: 3em; /* Set maximum height */
+  margin: 20px; /* Add margin around the icon */
+}
+
+/* Styles for the info container inside the card */
+.info {
+  flex-wrap: wrap; /* Allow wrapping of info elements */
+  display: flex; /* Display as flex container */
+  justify-content: space-evenly; /* Evenly space the elements */
+}
+
+/* Media query for screens up to 800px width */
+@media screen and (max-width: 800px) {
+  /* Adjust icon opacity for smaller screens */
+  .icon {
     opacity: 1;
-}
-
-
-.card-title{
-    text-align: center;
-    margin-bottom: 6px;
-}
-
-
-.icon-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.icon{
-    opacity: 80%;
-    width: 10vw; /* Adjust the value as needed */
-    height: 10vw; /* Adjust the value as needed */
-    max-width: 3em; /* Set a maximum width for the icon */
-    max-height: 3em; /* Set a maximum height for the icon */
-    margin: 20px;
-}
-
-
-
-.info{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-@media screen and (max-width: 800px){
-    .icon{
-        opacity: 1;
-    }
+  }
 }
