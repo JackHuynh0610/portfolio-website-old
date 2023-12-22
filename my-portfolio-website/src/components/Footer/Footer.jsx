@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+        <p>&copy; 2023 jackhuynh. All rights reserved.</p>
         <div className="social-icons">
           <a href="https://github.com/JackHuynh0610" target="_blank" rel="noopener noreferrer">
             <img src={Github} alt="GitHub" />
