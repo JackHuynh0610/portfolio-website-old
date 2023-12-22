@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skill from "./components/Skill/Skill";
+import Contact from "./components/Contact/Contact";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Skill />
+      <Contact />
     </div>
   );
 }

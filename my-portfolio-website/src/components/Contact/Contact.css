@@ -1,0 +1,13 @@
+.contact-line{
+    opacity: 70%;
+      border-top: 1px solid antiquewhite;
+      width: 95%;
+      margin: 0 auto;
+  }
+
+  .contact-title {
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+  }
+  
