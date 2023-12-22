@@ -1,116 +1,129 @@
-.contact-line{
-    opacity: 70%;
-      border-top: 1px solid antiquewhite;
-      width: 95%;
-      margin: 0 auto;
-  }
+/* Styling for the line above the contact section */
+.contact-line {
+  opacity: 70%;
+  border-top: 1px solid antiquewhite;
+  width: 95%;
+  margin: 0 auto;
+}
 
-  .contact-page{
-    transition: 0.4s ease;
-    margin-bottom: 200px;
-  }
+/* Styling for the entire contact section */
+.contact-page {
+  transition: 0.4s ease;
+  margin-bottom: 200px; /* Add margin at the bottom */
+}
 
-  .contact-title {
-    display: flex;
-    font-size: 3em;
-    justify-content: center;
-  }
+/* Styling for the contact section title */
+.contact-title {
+  display: flex;
+  font-size: 3em;
+  justify-content: center;
+}
 
-  .form-container{
-    display: flex;
-    justify-content: center;
-  }
+/* Styling for the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
 
-  .form{
-    width: 100%; /* Adjusted width */
-    max-width: 600px;
-  }
+/* Styling for the form */
+.form {
+  width: 100%; /* Adjusted width */
+  max-width: 600px;
+}
 
+/* Styling for the submit button */
 input[type="submit"] {
-    background-color: #4caf50;
-    font-size: 1em;
-    color: #fff;
-    cursor: pointer;
+  background-color: #4caf50;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
+/* Styling for the textarea */
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
+/* Styling for form inputs and textarea */
 input,
 textarea {
-    font-size: 1em;
-    width: 100%;
-    padding: 20px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  font-size: 1em;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
+/* Styling for labels */
 label {
-    display: block;
-    margin-bottom: 8px;
-    color: #dddddd;
+  display: block;
+  margin-bottom: 8px;
+  color: #dddddd;
 }
 
+/* Styling for the social media connection container */
 .connection-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 10px;
 }
 
-.connection-icon{
-    width: 60px; /* Adjust the size as needed */
-    height: 60px; /* Adjust the size as needed */
-    margin-bottom: 10px; /* Adjust margin as needed */
-    transition: 0.2s ease-in-out;
+/* Styling for social media icons */
+.connection-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in-out;
 }
 
-.connection-icon:hover{
-    transform: translateY(-5px);
+/* Styling for social media icons on hover */
+.connection-icon:hover {
+  transform: translateY(-5px);
 }
 
+/* Styling for the form */
 form {
-    margin-top: 10px;
-    background-color: #252222;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+  margin-top: 10px;
+  background-color: #252222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
 }
 
-#announce{
-    text-align: center;
-    font-size: 2rem;
-    background-color: none;
-    transition: 0.2s ease;
-    animation: fadeIn 1s ease-in-out;
-    border-radius: 5px;
-    width: 20%;  
-    margin: 0 auto;
+/* Styling for announcement messages */
+#announce {
+  text-align: center;
+  font-size: 2rem;
+  background-color: none;
+  transition: 0.2s ease;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0 auto;
 }
 
+/* Keyframe animation for fadeIn effect */
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(
-        -40px
-      ); /* Optional: Add a slight upward translation */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  @media screen and (max-width: 800px){
-    
-  }
-  
+/* Media query for small screens (max-width: 800px) */
+@media screen and (max-width: 800px) {
+  /* Add styles for small screens if needed */
+}
