@@ -68,7 +68,7 @@ function Contact() {
   // Effect to observe the intersection of the contact section
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.4,
+      threshold: 0.2,
     });
     observer.observe(document.getElementById("contact-page"));
 
