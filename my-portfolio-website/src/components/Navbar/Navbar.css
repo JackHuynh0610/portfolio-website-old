@@ -1,3 +1,4 @@
+/* Styles for the header */
 .header {
   background-color: rgba(
     0,
@@ -8,24 +9,27 @@
   padding: 0.5%;
   z-index: 999;
   top: 0;
-  animation: fadeIn 0.8s ease;
+  animation: fadeIn 0.8s ease; /* Fade in animation */
   position: sticky;
 }
 
+/* Styles for the hamburger menu icon */
 .hamburger-menu {
   display: none; /* Hide hamburger menu by default */
-  cursor: pointer; /*this just an indication they you are hover over the hamburger, def not the pointer in C "finger cross*/
+  cursor: pointer; /* Indicate that it's clickable */
 }
 
+/* Styles for the navigation menu */
 .nav-menu {
   list-style: none;
   display: flex;
-  justify-content: space-evenly; /*make sure the icon space nicely and take up the whole screen so senior dev(cuz they old) can easily navigate*/
+  justify-content: space-evenly; /* Space out the icons evenly */
   margin: 0;
   margin-top: 0.4rem;
   padding: 0;
 }
 
+/* Styles for the logos */
 .homeLogo,
 .aboutLogo,
 .contactLogo,
@@ -37,6 +41,7 @@
     brightness(102%) contrast(102%);
 }
 
+/* Styles for logo hover effect */
 .homeLogo:hover,
 .aboutLogo:hover,
 .contactLogo:hover,
@@ -49,14 +54,14 @@
 }
 
 /* Media query for responsive design */
-
 @media screen and (max-width: 800px) {
   .header {
     background-color: rgba(0, 0, 0, 0.849);
-    opacity: 100%; /*make sure the hamburger akways visible (I'm hungry)*/
+    opacity: 100%; /* Make sure the hamburger is always visible */
     position: sticky;
   }
 
+  /* Styles for the hamburger menu on smaller screens */
   .hamburger-menu {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -68,10 +73,12 @@
       sepia(0%);
   }
 
+  /* Hide the regular menu for smaller screens */
   .nav-menu {
-    display: none; /* Hide the regular menu for smaller screens */
+    display: none;
   }
 
+  /* Styles for logos on smaller screens */
   .homeLogo,
   .aboutLogo,
   .contactLogo,
@@ -79,6 +86,8 @@
     margin-bottom: 1rem;
     opacity: 65%;
   }
+
+  /* Logo hover effect on smaller screens */
   .homeLogo:hover,
   .aboutLogo:hover,
   .contactLogo:hover,
@@ -87,6 +96,7 @@
     transform: translateY(-5px); /* Move the icon 5 pixels upward on hover */
   }
 
+  /* Show the menu for smaller screens */
   .nav-menu.show {
     display: flex;
     flex-direction: column;
@@ -96,6 +106,7 @@
   }
 }
 
+/* Keyframes for the fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
