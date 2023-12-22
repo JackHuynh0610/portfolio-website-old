@@ -18,6 +18,13 @@
   font-size: 3em;
   justify-content: center;
 }
+/* Styling for deco the cat */
+.deco{
+  transform: translateY(70px);
+  padding-top: 10px;
+  margin: 0;
+  text-align: center;
+}
 
 /* Styling for the form container */
 .form-container {

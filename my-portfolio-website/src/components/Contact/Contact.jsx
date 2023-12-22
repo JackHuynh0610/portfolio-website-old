@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import Github from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\github-mark-c791e9551fe4\\github-mark\\github-mark-white.svg";
 import LinkedIn from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\icons\\linkin.svg";
 
+import deco from "D:\\MyPortfolioWebsite\\my-portfolio-website\\src\\assets\\pictures\\background\\cat-1423_256.gif";
 function Contact() {
   // State for controlling opacity
   const [opacity, setOpacity] = useState(0);
@@ -154,6 +155,10 @@ function Contact() {
             className="connection-icon"
           />
         </a>
+      </div>
+      {/* deco the cat */}
+      <div className="deco">
+        <img src={deco} alt="cat"/>
       </div>
     </div>
   );
