@@ -42,7 +42,7 @@
 
 .ray-card img:hover{
   transform: scale(1.2);
-  opacity: 100%;
+  opacity: 95%;
 }
 
 .ray-card img {

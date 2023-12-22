@@ -90,7 +90,6 @@ function About() {
       <div className="line"></div>
       <section className="about-section">
         <h2 className="about-title">About</h2>
-
         <section className="introduction-section">
           <div className="content-wrapper">
           <img src={Avatar} className="avt" alt="Avatar" />

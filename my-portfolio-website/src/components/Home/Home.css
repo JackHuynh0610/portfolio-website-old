@@ -55,7 +55,6 @@
   height: auto;
   border-radius: 50%; /* Add border-radius for rounded corners */
   box-shadow: 5px 0 10px rgba(255, 255, 255, 0.137);
-  animation: moveUpDown 4s linear infinite;
 }
 
 /* Styles for paragraphs */
@@ -65,6 +64,26 @@
   line-height: 0;
   font-weight: bold;
   color: antiquewhite;
+}
+
+#downloadButton{
+  transform: translateY(80px);
+  background-image: linear-gradient(to right, rgb(216, 216, 216) 0%, rgb(185, 184, 184) 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  opacity: 90%;
+  width: 30%;
+  font-size: 1em;
+  max-width: 300px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+#downloadButton:hover{
+  background-position: -100% 0;
+  opacity: 1;
 }
 
 /* Media query for screens up to 1000px width */
@@ -124,14 +143,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes moveUpDown {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
   }
 }

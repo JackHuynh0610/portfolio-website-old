@@ -77,6 +77,7 @@ function Home() {
               <p className="traits">Creative</p>
             </div>
           </div>
+          <button id="downloadButton">Download Resume</button>
         </div>
         <div className="profile-picture">
           <img src={JackHuynh} alt="Jack Huynh" />
