@@ -65,6 +65,7 @@
   padding: 5px; /* Add padding */
   font-size: 1.5em; /* Set font size */
   line-height: 1.5; /* Set line height */
+  width: 60ch;
 }
 
 /* Styles for the avatar image */
