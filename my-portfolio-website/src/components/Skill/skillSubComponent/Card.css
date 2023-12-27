@@ -1,21 +1,9 @@
 /* Styles for the card container */
 .card {
-  box-shadow: 1 4px 8px rgba(170, 153, 153, 0.678); /* Set box shadow for the card */
-  transition: box-shadow 0.2s ease; /* Add transition effect for box shadow */
   border: 1px solid white; /* Add a white border to the card */
   border-radius: 5%; /* Add border-radius for rounded corners */
   width: 600px; /* Set width of the card */
   height: 300px; /* Set height of the card */
-}
-
-/* Hover styles for the card */
-.card:hover {
-  box-shadow: 0 8px 16px rgba(192, 182, 182, 0.788); /* Change box shadow on hover */
-}
-
-/* Hover styles for the icon inside the card */
-.card:hover .icon {
-  opacity: 1; /* Change opacity on hover */
 }
 
 /* Styles for the title inside the card */
@@ -33,7 +21,7 @@
 
 /* Styles for the icon inside the card */
 .icon {
-  opacity: 80%; /* Set initial opacity */
+  opacity: 1; /* Set initial opacity */
   width: 10vw; /* Set width relative to viewport width */
   height: 10vw; /* Set height relative to viewport width */
   max-width: 3em; /* Set maximum width */
