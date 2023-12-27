@@ -65,7 +65,7 @@
   padding: 5px; /* Add padding */
   font-size: 1.5em; /* Set font size */
   line-height: 1.5; /* Set line height */
-  width: 60ch;
+  width: 56ch;
 }
 
 /* Styles for the avatar image */
@@ -92,6 +92,7 @@
 
   .introduction {
     font-size: 0.9em; /* Adjust font size */
+    width: auto;
     font-weight: 600; /* Set font weight */
   }
 }
