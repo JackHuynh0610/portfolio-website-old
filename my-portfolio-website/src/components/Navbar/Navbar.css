@@ -27,7 +27,6 @@
   margin: 0;
   margin-top: 0.4rem;
   padding: 0;
-  padding-bottom: 2em;
 }
 
 .nav-menu li a {
@@ -92,6 +91,7 @@
   /* Hide the regular menu for smaller screens */
   .nav-menu {
     display: none;
+    padding-bottom: 2em;
   }
 
   /* Styles for logos on smaller screens */
