@@ -36,6 +36,7 @@ function Navbar() {
           <li>
             <a href="#home-page" className="home-link" onClick={closeMenu}>
               <img src={homeLogo} alt="homeLogo" className="homeLogo" />
+              <span>Home</span>
             </a>
           </li>
 
@@ -43,6 +44,7 @@ function Navbar() {
           <li>
             <a href="#about-page" className="about-link" onClick={closeMenu}>
               <img src={aboutLogo} alt="aboutLogo" className="aboutLogo" />
+              <span>About</span>
             </a>
           </li>
 
@@ -50,6 +52,7 @@ function Navbar() {
           <li>
             <a href="#skill-page" className="skill-link" onClick={closeMenu}>
               <img src={skillLogo} alt="homeLogo" className="skillLogo" />
+              <span>Skills</span>
             </a>
           </li>
 
@@ -61,6 +64,7 @@ function Navbar() {
                 alt="contactLogo"
                 className="contactLogo"
               />
+              <span>Contact</span>
             </a>
           </li>
         </ul>
